@@ -1,0 +1,16 @@
+// import variables and mixings
+@import "../variables";
+@import "../mixings";
+
+.btn{
+  padding:10px;
+  text-align: center;
+  @include border-radius(3px);
+  border:none;
+  text-align: center;
+
+  &.green-btn{
+    background: $green;
+    color:$white;
+  }
+}

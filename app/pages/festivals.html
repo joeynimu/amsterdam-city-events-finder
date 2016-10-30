@@ -1,0 +1,26 @@
+<!-- this is the template for events results -->
+<div class="results-area container">
+  <div class="back">
+    <a href="#/" class="btn green-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</a>
+  </div>
+  <!-- if results are found show the below -->
+  <div class="the-results" ng-if="eventResults.poi.length">
+    <h3>Search results for {{ category }}</h3>
+    <!-- loop through all the results and show some data with a link -->
+    <div class="results" ng-repeat="event in eventResults.poi">
+      <div class="row">
+          <a href="#/festivals/{{ event.id }}">
+            <div class="panel panel-defautl">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-map-marker" aria-hidden="true"></i>{{ event.label[0].value }}</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- if no results were found -->
+  <div class="no-results" ng-if="!eventResults.poi.length">
+    <h3>No results were found for {{ category }}. Please search again <a href="#/">here</a></h3>
+  </div>
+</div>

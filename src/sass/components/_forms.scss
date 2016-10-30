@@ -1,0 +1,31 @@
+// import variables and mixings
+@import "../variables";
+@import "../mixings";
+
+// import directional incase of localisation
+@import "directional";
+
+input{
+  border:2px solid $input-border;
+  @include border-radius(3px);
+  padding:6px;
+
+  @media (min-width: $ipad-portrait){
+    height:52px;
+  }
+
+  &.with-search-icon{
+    background: url('../images/search-icon.png') no-repeat;
+    background-size: 18px 18px;
+    background-position:6px center;
+    @include if-rtl{
+      background-size: calc(100% - 6px) center;
+    }
+    padding-#{$left}:28px;
+  }
+
+  &:focus{
+    outline: none;
+    border-color: $input-higlight;
+  }
+}

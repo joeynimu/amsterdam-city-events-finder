@@ -1,0 +1,150 @@
+// import varibables and components
+@import "variables";
+@import "mixings";
+@import "components/grid";
+@import "components/buttons";
+@import "components/forms";
+@import "font-awesome";
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    color: $grey;
+}
+
+.clear-fix {
+    clear: both;
+}
+// header styling
+
+.header {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px 0 $header-shadow;
+
+    h1 {
+        color: $grey;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+//hero area
+.hero-area {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    @media (max-width: $ipad-portrait) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    h3 {
+        position: absolute;
+        z-index: 2;
+        color: $white;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 24px;
+        font-weight: 300;
+        @media (min-width: $ipad-portrait) {
+            font-size: 36px;
+        }
+    }
+}
+//home page form area
+.home-page {
+    > p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: $light;
+    }
+}
+
+.search-form {
+    max-width: 570px;
+    margin: auto;
+
+    div.form-element {
+        width: 100%;
+
+        .input-field {
+            width: 100%;
+            @media (min-width: $smart-phone-landscape) {
+                width: calc(100% - 138px);
+                float: $left;
+            }
+            input[type=text]{
+              width:100%;
+            }
+        }
+
+        .action-btn {
+            width: 100%;
+            @media (min-width: $smart-phone-landscape) {
+                width: 136px;
+                float: $right;
+            }
+            .btn{
+              width:100%;
+              @media (max-width: $extra-large-phone){
+                margin-top:10px;
+              }
+              @media (min-width: $ipad-portrait){
+                height:52px;
+              }
+              a{
+                color:$white;
+                display:block;
+                &:hover{
+                  color:$white;
+                  text-decoration: none;
+                }
+              }
+            }
+        }
+    }
+}
+
+// events listing
+.panel-title{
+  .fa{
+    padding-right:10px;
+  }
+}
+
+// single event page
+.map{
+  width:100%;
+  height:300px;
+}
+
+.back{
+  margin-top:10px;
+  .fa{
+    padding-right:10px;
+  }
+  .single-festival {
+    padding-left:15px;
+  }
+}

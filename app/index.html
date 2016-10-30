@@ -1,0 +1,28 @@
+<!-- this is the base page/ entry level -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="festiveApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Joe Ng'ethe">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Amsterdam Festive App - by Joe Ng'ethe</title>
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+  <header class="header">
+    <a href="/#/"><h1>Amsterdam Festive App</h1></a>
+  </header>
+  <section ng-view>
+    <!-- load content here based on the route in view -->
+  </section>
+ <!-- load jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- load the bundled js file -->
+  <script type="text/javascript" src="js/bundle.js"></script>
+  <!-- google maps API with key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb-eW04vMY1YgI1CIjKyIJbSfrJEWneTU"></script>
+</body>
+</html>
