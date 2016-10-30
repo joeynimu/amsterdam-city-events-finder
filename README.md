@@ -8,7 +8,7 @@ Folow the steps below;
 * run `npm install`
 * do a `cd app`
 * start the server by running `startserver`
-#Improvements to consider in the future
+# Improvements to consider in the future
 * Improve the UI/UX experience.
 * set a cap to the returned results incase they are many and then add a page navigation or lazy load them
 * Split the $resource into factories if the API permmits that
