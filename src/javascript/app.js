@@ -1,5 +1,4 @@
-// my required files
-var angular = require('angular');
+var angular = require('angular'),
     ngResource = require('angular-resource'),
     ngRoute = require('angular-route');
 
