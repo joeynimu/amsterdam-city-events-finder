@@ -14,4 +14,5 @@ Folow the steps below;
 * Improve the UI/UX experience.
 * set a cap to the returned results incase they are many and then add a page navigation or lazy load them
 * Split the $resource into factories if the API permmits that
+* Unit tests
 
